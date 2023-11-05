@@ -746,7 +746,7 @@ body::-webkit-scrollbar{
 
 #Nor img{
     width: 100%;
-    margin-bottom: -0.4vh;
+    margin-bottom: -0.35vh;
     margin-top: 0.2vh;
     transition: 0.1s;
     left: 0%;
@@ -759,7 +759,7 @@ body::-webkit-scrollbar{
 
 #Eas img{
     width: 100%;
-    margin-bottom: -0.4vh;
+    margin-bottom: -0.35vh;
     margin-top: 0.2vh;
     filter: opacity(0.5);
 }
