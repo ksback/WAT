@@ -1,0 +1,809 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+#slider{
+    display: flex;
+    
+}
+
+#imageContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+#imageSlider{
+    width: 200vw;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#imageSlider img{
+    position: absolute;
+    z-index: -1;
+}
+
+#background img{
+    width: 100vmax
+
+}
+
+
+/*좌측 위 박스*/
+
+#boxA{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#boxA1 img{ /*프로파일*/
+    width: 40%;
+    left: -5%;
+    top: -5%;
+    position: absolute;
+    transform: rotate(5deg);
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+    transition:all 0.5s;
+}
+
+#boxA1:hover img{
+    transform: scale(1.5);
+    left: 8%;
+    top: 2%;
+    z-index: 11;
+}
+
+#boxA2 img{ /*인물사진*/
+    width: 20%;
+    transform: rotate(-10deg);
+    top: 8%;
+    left: 45%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxA2:hover img{
+    transform: scale(1.5);
+    left: 45%;
+    top: 10%;
+    z-index: 11;
+}
+
+#boxA3 img{ /*흰메모*/
+    width: 18%;
+    transform: rotate(-5deg);
+    top: -5%;
+    left: 30%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+}
+
+#boxA4 img{ /*범행 도구*/
+    width: 18%;
+    transform: rotate(-5deg);
+    top: 61%;
+    left: 31%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+}
+
+#boxA5 img{ /*교수형*/
+    width: 21%;
+    transform: rotate(15deg);
+    top: 22%;
+    left: 34%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxA6 img{ /*고전*/
+    width: 30%;
+    transform: rotate(3deg);
+    top: 80%;
+    left: 85%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxA7 img{ /*낫*/
+    width: 16%;
+    transform: rotate(-10deg);
+    top: 78%;
+    left: 4%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+}
+
+#boxA8 img{ /*밧줄*/
+    width: 18%;
+    transform: rotate(10deg);
+    top: 70%;
+    left: 57%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxA9 img{ /*이학만프로파일*/
+    width: 40%;
+    transform: rotate(-10deg);
+    top: 5%;
+    left: 62%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+    transition:all 0.5s;
+}
+
+#boxA9:hover img{
+    transform: scale(1.5);
+    left: 54%;
+    top: 17%;
+    z-index: 11;
+}
+
+#boxA10 img{ /*이학만사진*/
+    width: 11%;
+    transform: rotate(10deg);
+    top: 45%;
+    left: 55%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+    transition:all 0.5s;
+}
+
+#boxA10:hover img{
+    transform: scale(1.5);
+    left: 55%;
+    top: 50%;
+    z-index: 11;
+}
+
+#Aline1{
+    width: 30vw;
+    transform: rotate(90deg);
+    top: 100%;
+    left: 25%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 2;
+}
+
+
+/*///////////////우측 위 박스//////////////////////*/
+
+
+#boxB{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#boxB1 img{ /*김태현프로파일*/
+    width: 38%;
+    transform: rotate(7deg);
+    top: -5%;
+    left: 167%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxB1:hover img{
+    transform: scale(1.8);
+    left: 150%;
+    top: 10%;
+    z-index: 11;
+}
+
+#boxB2 img{ /*김태현이미지*/
+    width: 10%;
+    transform: rotate(-7deg);
+    top: 0%;
+    left: 160%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxB2:hover img{
+    transform: scale(1.5);
+    left: 160%;
+    top: 5%;
+    z-index: 11;
+}
+
+#boxB3 img{ /*이영학프로파일*/
+    width: 35%;
+    transform: rotate(-5deg);
+    top: 30%;
+    left: 110%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxB3:hover img{
+    transform: scale(1.7);
+    left: 112%;
+    top: 15%;
+    z-index: 11;
+}
+
+#boxB4 img{ /*이영학이미지*/
+    width: 12%;
+    transform: rotate(10deg);
+    top: 5%;
+    left: 117%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxB4:hover img{
+    transform: scale(1.5);
+    left: 117%;
+    top: 10%;
+    z-index: 11;
+}
+
+#boxB5 img{ /*인격장애*/
+    width: 10%;
+    transform: rotate(-3deg);
+    top: 8%;
+    left: 124%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 5;
+}
+
+#boxB6 img{ /*피해자 특징*/
+    width: 15%;
+    transform: rotate(-7deg);
+    top: 55%;
+    left: 150%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 4;
+}
+
+#boxB7 img{ /*사형*/
+    width: 18%;
+    transform: rotate(10deg);
+    top: 15%;
+    left: 143%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxB8 img{ /*사형*/
+    width: 20%;
+    transform: rotate(-7deg);
+    top: 65%;
+    left: 160%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxB9 img{ /*망치*/
+    width: 15%;
+    transform: rotate(-3deg);
+    top: 80%;
+    left: 148%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxB10 img{ /*쓰레기봉투*/
+    width: 11%;
+    transform: rotate(12deg);
+    top: 30%;
+    left: 100%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxB11 img{ /*열쇠*/
+    width: 16%;
+    transform: rotate(-20deg);
+    top: 0%;
+    left: 100%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxB12 img{ /*필기*/
+    width: 25%;
+    transform: rotate(-20deg);
+    top: -10%;
+    left: 133%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+
+#Bline1{
+    width: 35vw;
+    transform: rotate(40deg);
+    top: 40%;
+    left: 125%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 3;
+}
+
+#Bline2{
+    width: 85vw;
+    transform: rotate(95deg);
+    top: 100%;
+    left: 83%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 4;
+}
+
+
+
+/*///////////////좌측 아래 박스//////////////////////*/
+#boxC{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#boxC1 img{ /*유영철 프로파일*/
+    width: 40%;
+    transform: rotate(-7deg);
+    top: 135%;
+    left: 0%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxC1:hover img{
+    transform: scale(1.6);
+    left: 9%;
+    top: 110%;
+    z-index: 11;
+}
+
+
+#boxC2 img{ /*유영철 이미지*/
+    width: 12%;
+    transform: rotate(10deg);
+    top: 108%;
+    left: 0%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxC2:hover img{
+    transform: scale(1.5);
+    left: 5%;
+    top: 110%;
+    z-index: 11;
+}
+
+#boxC3 img{ /*임도빈 프로파일*/
+    width: 40%;
+    transform: rotate(10deg);
+    top: 105%;
+    left: 60%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+    transition:all 0.5s;
+}
+
+#boxC3:hover img{
+    transform: scale(1.6);
+    left: 52%;
+    top: 115%;
+    z-index: 11;
+}
+
+#boxC4 img{ /*임도빈 이미지*/
+    width: 12%;
+    transform: rotate(-10deg);
+    top: 105%;
+    left: 55%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+    transition:all 0.5s;
+}
+
+#boxC4:hover img{
+    transform: scale(1.5);
+    left: 55%;
+    top: 110%;
+    z-index: 11;
+}
+
+#boxC5 img{ /* 예고 살인 */
+    width: 18%;
+    transform: rotate(10deg);
+    top: 120%;
+    left: 30%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 5;
+
+}
+
+#boxC6 img{ /*유가족슬픔*/
+    width: 18%;
+    transform: rotate(-7deg);
+    top: 165%;
+    left: 55%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+}
+
+#boxC7 img{ /*사형*/
+    width: 25%;
+    transform: rotate(-10deg);
+    top: 170%;
+    left: 35%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxC8 img{ /*암실*/
+    width: 25%;
+    transform: rotate(-7deg);
+    top: 100%;
+    left: 30%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxC9 img{ /*병*/
+    width: 18%;
+    transform: rotate(10deg);
+    top: 139%;
+    left: 40%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxC10 img{ /*약*/
+    width: 14%;
+    transform: rotate(7deg);
+    top: 175%;
+    left: 90%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+}
+
+#boxC11 img{ /*토막*/
+    width: 12%;
+    transform: rotate(11deg);
+    top: 80%;
+    left: 18%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#Cline1{
+    width: 90vw;
+    transform: rotate(16deg);
+    top: 157%;
+    left: 35%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 4;
+}
+
+#Cline2{
+    width: 108vw;
+    transform: rotate(-35deg);
+    top: 74%;
+    left: 33%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 3;
+}
+
+
+/*///////////////우측 아래 박스//////////////////////*/
+#boxD{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#boxD1 img{ /*고유정*/
+    width: 35%;
+    transform: rotate(7deg);
+    top: 115%;
+    left: 105%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxD1:hover img{
+    transform: scale(1.7);
+    left: 113%;
+    top: 112%;
+    z-index: 11;
+}
+
+
+#boxD2 img{ /*고유정이미지*/
+    width: 10%;
+    transform: rotate(-5deg);
+    top: 125%;
+    left: 137%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxD2:hover img{
+    transform: scale(1.5);
+    left: 137%;
+    top: 130%;
+    z-index: 11;
+}
+
+
+#boxD3 img{ /*이춘재*/
+    width: 40%;
+    transform: rotate(5deg);
+    top: 135%;
+    left: 165%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxD3:hover img{
+    transform: scale(1.6);
+    left: 150%;
+    top: 110%;
+    z-index: 11;
+}
+
+#boxD4 img{ /*이춘재이미지*/
+    width: 13%;
+    transform: rotate(-10deg);
+    top: 110%;
+    left: 187%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 3;
+    transition:all 0.5s;
+}
+
+#boxD4:hover img{
+    transform: scale(1.5);
+    left: 180%;
+    top: 110%;
+    z-index: 11;
+}
+
+
+#boxD5 img{ /*범행동기*/
+    width: 18%;
+    transform: rotate(-5deg);
+    top: 170%;
+    left: 115%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 4;
+}
+
+
+#boxD9 img{ /*톱*/
+    width: 14%;
+    transform: rotate(-14deg);
+    top: 98%;
+    left: 132%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+
+#boxD6 img{ /*복면*/
+    width: 24%;
+    transform: rotate(-5deg);
+    top: 165%;
+    left: 150%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+
+#boxD8 img{ /*칼*/
+    width: 15%;
+    transform: rotate(7deg);
+    top: 140%;
+    left: 142%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+
+#boxD7 img{ /*체포*/
+    width: 17%;
+    transform: rotate(-11deg);
+    top: 105%;
+    left: 155%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 2;
+}
+
+#boxD10 img{ /*티켓*/
+    width: 15%;
+    transform: rotate(-7deg);
+    top: 85%;
+    left: 175%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+#boxD11 img{ /*라이브*/
+    width: 15%;
+    transform: rotate(18deg);
+    top: 170%;
+    left: 132%;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px #000);
+    z-index: 1;
+}
+
+
+
+#Dline{
+    width: 67vw;
+    transform: rotate(-60deg);
+    top: 125%;
+    left: 107%;
+    border: 2px solid rgb(218, 0, 0);
+    position: absolute;
+    z-index: 3;
+}
+
+
+
+/**/
+#interface{
+    width: 12vw;
+    height: 5vmax;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    left: 45%;
+    bottom: 5%;
+    z-index:5;
+
+}
+
+#interfaceContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+#Nor img{
+    width: 100%;
+    margin-bottom: -0.4vh;
+    margin-top: 0.2vh;
+    transition: 0.1s;
+    left: 0%;
+    filter: opacity(0.5);
+}
+
+#Nor:hover img{
+    filter: opacity(1.2);
+}
+
+#Eas img{
+    width: 100%;
+    margin-bottom: -0.4vh;
+    margin-top: 0.2vh;
+    filter: opacity(0.5);
+}
+
+#Eas:hover img{
+    filter: opacity(1.2);
+}
+
+#Wes img{
+    width: 100%;
+    filter: opacity(0.5);
+}
+
+#Wes:hover img{
+    filter: opacity(1.2);
+}
+
+#Sou img{
+    width: 100%;
+    filter: opacity(0.5);
+}
+
+#Sou:hover img{
+    filter: opacity(1.2);
+}
+
+#interfaceBack{
+    position: absolute;
+    bottom: -12%;
+    left: 5%;
+    width: 80%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(7px);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+.cal2{width: 100%;}
+.cal1{width: 50%;}
+
